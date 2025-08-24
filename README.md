@@ -1,6 +1,6 @@
-# code_graph
+# CallGraph-rs
 
-`code_graph` is a Rust-based tool that analyzes Rust codebases and generates a visual call graph of their functions. It helps developers understand the structure and relationships between functions across their project by producing a graph image.
+`CallGraph-rs` is a Rust-based tool that analyzes Rust codebases and generates a visual call graph of their functions. It helps developers understand the structure and relationships between functions across their project by producing a graph image.  
 
 ## How It Works
 
@@ -21,8 +21,8 @@
 Clone the repository and build the executable:
 
 ```bash
-git clone https://github.com/mathieuemery/code_graph.git
-cd code_graph
+git clone https://github.com/mathieuemery/CallGraph-rs.git
+cd CallGraph-rs
 cargo build --release
 ```
 
@@ -31,7 +31,7 @@ cargo build --release
 Analyze your Rust project (replace `/path/to/your/rust/project` with your actual folder):
 
 ```bash
-./target/release/code_graph /path/to/your/rust/project
+./target/release/CallGraph-rs /path/to/your/rust/project
 ```
 
 - This will produce two files in the current directory:
@@ -46,7 +46,7 @@ Below is an example of the output graph generated for a this Rust project:
 
 ## Contributing
 
-Feel free to submit issues or pull requests to improve `code_graph`!
+Feel free to submit issues or pull requests to improve `CallGraph-rs`!
 
 ## License
 
