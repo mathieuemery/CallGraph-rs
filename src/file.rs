@@ -8,6 +8,7 @@ use crate::function::Function;
 
 /// The file extension for Rust source files.
 const FILE_EXTENSION: &str = "rs";
+const CODE_FOLDER: &str = "src";
 
 /// Represents a Rust source code file.
 pub struct CodeFile {
@@ -78,8 +79,9 @@ impl CodeFile {
 ///
 fn collect_files_recursively(path: &Path) -> Result<Vec<String>> {
     let mut files = Vec::new();
+    let src_path = path.join(CODE_FOLDER);
 
-    for entry in read_dir(path)? {
+    for entry in read_dir(src_path)? {
         let entry = entry?;
         let path = entry.path();
 
